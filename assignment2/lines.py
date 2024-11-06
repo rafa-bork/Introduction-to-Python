@@ -7,7 +7,7 @@ def main():
         # script import and line caltulation
         with open(get_py(), "r") as file:
             lines = file.readlines()
-            get_lenght(lines)
+            get_length(lines)
     # if there is not a script with the given name the progrem stops
     except FileNotFoundError:
         print("File does not exist")
@@ -31,7 +31,7 @@ def get_py():
 
 
 # calculates the number of code lines in a script
-def get_lenght(lines):
+def get_length(lines):
     line_number = 0
     # only count the line if it isnt empty or a comment
     for item in lines:
